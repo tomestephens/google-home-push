@@ -2,15 +2,15 @@
   "name": "google-home-push",
   "version": "1.1.2",
   "description": "Send push notifications to your Google Home device.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Taeuk Kang",
+  "author": "Tom Stephens",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/taeukme/google-home-push"
+    "url": "https://github.com/tomestephens/google-home-push"
   },
   "keywords": [
     "google home",
@@ -18,6 +18,7 @@
     "notifications"
   ],
   "dependencies": {
+    "@types/node": "^10.12.18",
     "castv2-client": "^1.2.0",
     "google-tts-api": "^0.0.4",
     "is-ip": "^2.0.0",

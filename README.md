@@ -1,20 +1,22 @@
 # google-home-push
 Send push notifications to your Google Home device.
+Based entirely on https://github.com/taeukme/google-home-push.
+Just moved to Typescript and made it fully async/await compatible.
 
 ## Installation
 ```
-$ npm install --save google-home-push
+$ npm install --save google-home-push-ts
 ```
 
 ## Usage
 ```
-const GoogleHome = require("google-home-push");
+import { GoogleHome } from 'google-home-push-ts'
 
 // Pass the name or IP address of your device
 const myHome = new GoogleHome("192.168.0.5");
 
-myHome.speak("Hello world!");
-myHome.push("https://example.com/music.mp3");
+await myHome.speak("Hello world!");
+await myHome.push("https://example.com/music.mp3");
 ```
 
 ## Example
@@ -32,7 +34,7 @@ Pass the `language` option from the [following list](https://cloud.google.com/tr
 
 ## API
 ### new GoogleHome(deviceIdentifier, [options])
-Creates an `instantce` of GoogleHome.
+Creates an `instance` of GoogleHome.
 
 #### deviceIdentifier
 Type: `string`
@@ -67,4 +69,4 @@ Type: `string`
 A valid media URL that would be cast
 
 ## License
-[MIT](https://github.com/taeukme/google-home-push/blob/master/LICENSE.md)
+[MIT](https://github.com/tomestephens/google-home-push/blob/master/LICENSE.md)
